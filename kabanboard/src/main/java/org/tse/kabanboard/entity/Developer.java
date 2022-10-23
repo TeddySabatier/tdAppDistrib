@@ -62,10 +62,10 @@ public class Developer {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	public Date getStartContract() {
+	public LocalDate getStartContract() {
 		return startContract;
 	}
-	public void setStartContract(Date startContract) {
+	public void setStartContract(LocalDate startContract) {
 		this.startContract = startContract;
 	}
 }

@@ -7,8 +7,16 @@ import javax.persistence.Id;
 
 @Entity
 public class TaskType {
+	public TaskType() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
 	private @Id Long id;
 	private String label;
+	public TaskType(Long tASK_TYPE_ID, String tASK_TYPE_LABEL) {
+		id=tASK_TYPE_ID;
+		label=tASK_TYPE_LABEL;
+	}
 	@Override
 	public int hashCode() {
 		return Objects.hash(id, label);
